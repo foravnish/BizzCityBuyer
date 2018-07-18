@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">BizzCityInfo</string>
+    <string name="title_activity_home">HomeAct</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--<string name="signup">New User? Sign Up</string>-->
+    <string name="signup"><font fgcolor='#ffffff'>New User? </font><font fgcolor='#fada14'>Sign Up</font></string> <!--gray-->
+
+    <string name="termCondition">
+
+        <b>For Registered Members (Sellers):</b>
+
+\nSellers should provide true, updated and complete information of business. Required to provide the address of head/registered office while filling online registration form.
+
+\nRegistered members shall not sell, offer to sell, attempt to sell, assign, transfer, share or give the account details allotted by the Website to third parties.
+
+\nRegistered members should bring to our notice any unauthorized use of their account.
+
+\nThe leads provided by the website shall be strictly used by registered members only;Any abuse or misuse of the leads is strictly prohibited.
+
+\nThe website has power to reject any registration or deny issuance of Master and Sub User account for whatsoever reasons.
+
+\nRegistered members cannot get into any commercial engagement with other IT vendors by providing them customer queries.
+
+        \n\n<b>Refund Conditions</b>
+\nWe do not refund money, Only refund credit points on certain conditions as mentioned below:
+
+\n* In Case of invalid contact information of buyer.
+
+        \n\n<b>No Refund Conditions</b>
+\n*No response to email / phone calls by *customersMistaken/Unintentional lead purchaseRefund *request after 7 days of enquiry receipt.
+
+        \n\n<b>Termination</b>
+
+\nThe BizzCity Admin has full rights to terminate the membership of Registered Companies, if it is detected that the company is using leads for his vented interests in violation of company’s terms and conditions. Once membership is revoked, all credits pertaining to the company shall be suspended.
+
+\nTransactions between Registered Sellers and Customers
+
+\nBizzCityInfo has maintained this website for exchanging information and facilitating transactions between Registered Companies and Customers. The website does not act as a representative of either side (Companies and Customers).
+
+\nBizzCityInfo does not warrant the safety, quality and legality of services provided by Registered Members. Registered Members and Customers are solely responsible for the transactions conducted through, on or due to this website.
+
+\nBizzCityInfo is not accountable for any dispute arising out of or relating to the transaction. The two parties shall not blame Website for any disagreement and must agree to discharge the website from all demands, actions, claims, proceedings, cost, expenses and damages, which includes actual, incidental, special and consequential damages without any specified limitation.
+
+    </string>
+
+    <style name="DialogTheme">
+        <item name="colorAccent">@color/orange</item>
+    </style>
+
+</resources>

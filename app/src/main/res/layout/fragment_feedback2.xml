@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/feebback_back"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+
+            android:background="#43000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/feedback" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/muli_bold"
+            android:padding="5dp"
+            android:text="What do you think of our App?"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/strock_simple2"
+                android:focusableInTouchMode="true">
+
+                <Spinner
+                    android:id="@+id/spinerCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:hint="Offer Heading"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="8dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="13dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@drawable/strock_simple2"
+                android:hint="Message"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/strock_btn_org"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center"
+                android:text="submit Your Feedback"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activites.ProfileAct">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textColor="#111"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/left"
+            android:drawableTint="#111"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linera1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <com.gelitenight.waveview.library.WaveView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="35dp"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tve_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/tve_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tve_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/muli_semibold"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:id="@+id/editPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/edit"
+            android:drawablePadding="5dp"
+            android:padding="8dp"
+            android:drawableTint="@color/white"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/muli_semibold"
+            android:text="Change Photo"
+            android:textColor="#fff"
+            android:layout_marginRight="2dp"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="12dp"
+        android:background="#fff6e5"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_mobile"
+            android:layout_marginBottom="10dp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_semibold"
+            android:text="User ID "
+            android:textColor="@color/md_grey_700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tve_user_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tve_mobile"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_user_id"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_bold"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="12dp"
+        android:background="#fff"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:fontFamily="@font/muli_semibold"
+            android:text="Member Since "
+            android:textColor="@color/md_grey_700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tve_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tve_user_id"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_city"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_bold"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:padding="12dp"
+        android:background="#fff6e5">
+
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_city"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_semibold"
+            android:gravity="right"
+            android:text="Gender"
+            android:textColor="@color/md_grey_700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tve_dob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tve_city"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_dob"
+            android:layout_weight="1"
+            android:fontFamily="@font/muli_bold"
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+        <Button
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strock_btn_org"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Change Password"
+            android:textColor="#fff"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linera2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="20dp"
+                android:text="Login to Proceed" />
+
+            <!-- TODO: Update blank fragment layout -->
+            <Button
+                android:id="@+id/loginNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/yellow"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="LOGIN NOW" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

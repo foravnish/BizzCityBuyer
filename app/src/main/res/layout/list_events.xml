@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/download1"
+        android:layout_margin="2dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/eventpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+
+                >
+                <TextView
+                    android:id="@+id/eventname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="@color/grayText"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    />
+                <ImageView
+                    android:id="@+id/locpic"
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/loc"
+                    android:layout_below="@+id/eventname"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/evntLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/locpic"
+                    android:layout_margin="5dp"
+                    android:text="Loading..."
+                    android:layout_below="@+id/eventname"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/calpic"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@+id/locpic"
+                    />
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/calpic"
+                    android:layout_below="@+id/evntLoc"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

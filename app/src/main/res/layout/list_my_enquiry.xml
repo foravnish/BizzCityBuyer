@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/muli_bold"
+                android:text="Loading"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/ratingbar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="rating bar"-->
+            <!--android:layout_below="@+id/heading"/>-->
+
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rating"
+                android:layout_width="80dp"
+                android:layout_height="15dp"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/heading"
+                android:progressTint="@color/orange"
+                style="@style/Widget.MaterialRatingBar.RatingBar" />
+
+            <TextView
+                android:id="@+id/total_member_use"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heading"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="2dp"
+                android:visibility="visible"
+                android:layout_toRightOf="@+id/rating"
+                android:fontFamily="@font/muli_semibold"
+                android:text="()"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="27 April 2018"
+                android:textSize="12sp"
+                android:paddingTop="2dp"
+                android:textColor="@color/grayText"
+                android:layout_marginRight="5dp"
+                android:layout_below="@+id/heading"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_below="@+id/date"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/muli_semibold"
+                android:textSize="15sp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:text="Looking For Packer &amp; movers"
+                android:layout_marginBottom="1dp"
+                android:layout_below="@+id/line"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/catimage"
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/message"
+                android:src="@drawable/catimage" />
+            <TextView
+                android:id="@+id/cattext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/muli"
+                android:layout_below="@+id/message"
+                android:layout_toRightOf="@+id/catimage"
+                android:text="Packers &amp; movers"
+                android:textSize="11sp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/grayText" />
+
+            <ImageView
+                android:id="@+id/locimage"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/catimage"
+                android:src="@drawable/locimage" />
+            <TextView
+                android:id="@+id/loctext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/muli"
+                android:textSize="11sp"
+                android:layout_below="@+id/catimage"
+                android:layout_toRightOf="@+id/locimage"
+                android:text="Vaishali, Ghaziabad"
+                android:textColor="@color/grayText"
+                android:layout_marginBottom="10dp"/>
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+</LinearLayout>

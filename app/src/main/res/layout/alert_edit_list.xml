@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/strock_simple"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:weightSum="2"
+        android:background="@color/orange"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editing Listing"
+            android:textSize="18dp"
+            android:fontFamily="@font/muli_bold"
+            android:gravity="center"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:fontFamily="@font/muli_semibold"
+                android:textStyle="bold"
+                android:checked="true"
+                android:buttonTint="@color/blue"
+                android:textColor="@color/grayText"
+                android:drawableBottom="@color/orange"
+                android:text=" I am a User / I am Visitor"/>
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:buttonTint="@color/blue"
+                android:fontFamily="@font/muli_semibold"
+                android:textColor="@color/grayText"
+                android:gravity="center_vertical"
+                android:drawableBottom="@color/orange"
+                android:text=" I own this listing / I work here."/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/editlay"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/linera"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/strock_simple"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fontFamily="@font/muli"
+            android:gravity="top"
+            android:hint="Write a Comment"
+            android:inputType="textMultiLine"
+            android:paddingLeft="2dp"
+            android:paddingTop="5dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editlay"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/strock_btn_org"
+        android:fontFamily="@font/muli_bold"
+        android:textColor="#fff"
+        android:textSize="17sp"
+        android:text="Submit"/>
+
+
+</LinearLayout>

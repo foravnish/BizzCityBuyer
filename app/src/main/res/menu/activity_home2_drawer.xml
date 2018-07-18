@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <!--android:iconTint="@color/gray4"-->
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1"
+        >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_profile"
+        android:iconTint="@color/gray4">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profilen1"
+
+            android:title="My Profile" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group15"
+        android:iconTint="@color/gray4">
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/gps"
+            android:title="Show Near Me"
+            app:actionLayout="@layout/item"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_need"
+            android:icon="@drawable/myneeds"
+            android:title="My Needs" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/event"
+            android:title="Upcoming Events" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group131">
+        <item
+            android:id="@+id/nav_bus_login"
+            android:icon="@drawable/logout"
+            android:title="Business Login" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_adver">
+        <item
+            android:id="@+id/nav_adver"
+            android:icon="@drawable/listbusiness"
+            android:title="Promote Your Business"
+            app:actionLayout="@layout/item2"/>
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group4">
+        <item
+            android:id="@+id/nav_offers"
+            android:icon="@drawable/offer"
+            android:title="Latest Offers" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group41">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/news"
+            android:title="Latest News" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_shop">
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/popular"
+            android:visible="false"
+            android:title="New Openings" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group51">
+        <item
+            android:id="@+id/nav_place"
+            android:icon="@drawable/popular"
+            android:title="Popular Places" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/favorite"
+            android:title="My Favourites" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/nav_rating"
+            android:icon="@drawable/rating"
+            android:title="My Ratings &amp; Reviews" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group7">
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/emergency22"
+            android:title="Emergency Numbers" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group8">
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/feedback22"
+            android:title="Feedback" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group81">
+        <item
+            android:id="@+id/nav_refer"
+            android:icon="@drawable/referfriend"
+            android:title="Refer a Friend" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group9">
+        <item
+            android:id="@+id/nav_tnc"
+            android:icon="@drawable/terms"
+            android:title="Terms &amp; Conditions" />
+    </group>
+    <group android:checkableBehavior="single"
+
+        android:id="@+id/group10">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/about"
+
+            android:title="About BizzCityInfo" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:visible="false"
+        android:id="@+id/group111">
+        <item
+            android:id="@+id/nav_about_city"
+            android:icon="@drawable/city"
+            android:title="About City" />
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group11">
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/contact"
+            android:title="Contact Us" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group12">
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/listbusiness"
+            android:title="Add Your Business" />
+    </group>
+
+
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group13">
+        <item
+            android:id="@+id/nav_notification"
+            android:icon="@drawable/notification"
+            android:visible="false"
+            android:title="Notification" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/group14">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

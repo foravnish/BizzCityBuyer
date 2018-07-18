@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="oval">
+
+<solid android:color="@color/white"/>
+<stroke android:width="1.5dp" android:color="@color/md_grey_200"/>
+
+<padding android:left="10dp" android:top="10dp"
+android:right="10dp" android:bottom="10dp" />
+
+</shape>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item >-->
+        <!--<shape android:shape="oval">-->
+
+            <!--<padding android:left="8px"-->
+                <!--android:top="8px"-->
+                <!--android:right="8px"-->
+                <!--android:bottom="8px"/>-->
+
+            <!--<solid android:color="@color/white"/>-->
+
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item >-->
+        <!--<shape android:shape="oval">-->
+
+            <!--<padding android:left="4.7px"-->
+                <!--android:top="4.7px"-->
+                <!--android:right="4.7px"-->
+                <!--android:bottom="4.7px"/>-->
+
+            <!--<solid android:color="@color/md_grey_300"/>-->
+
+        <!--</shape>-->
+    <!--</item>-->
+    <!--<item >-->
+        <!--<shape android:shape="oval">-->
+            <!--<solid android:color="@color/white"/>-->
+
+        <!--</shape>-->
+    <!--</item>-->
+
+
+<!--</layer-list>-->
+

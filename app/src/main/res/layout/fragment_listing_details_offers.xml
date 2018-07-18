@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="0dp"-->
+            <!--card_view:cardCornerRadius="0dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp">-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/homeimgjpg" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:background="#a9000000"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/comName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/muli_bold"
+                        android:gravity="left|bottom"
+                        android:layout_marginTop="50dp"
+                        android:layout_gravity="left"
+                        android:lines="2"
+                        android:text="Loading Loading Loading Loading Loading Loading Loading"
+                        android:textColor="@color/white"
+                        android:textSize="24dp" />
+
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="2dp"
+                        android:drawableTint="@color/md_blue_grey_400"
+                        android:fontFamily="@font/muli"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="16dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                            android:id="@+id/rating"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="8dp"
+                            android:isIndicator="true"
+                            android:numStars="5"
+                            card_view:mrb_fillBackgroundStars="true"
+                            card_view:mrb_progressBackgroundTint="#757575"
+                            android:progressTint="@color/orange"
+                            android:stepSize="1" />
+
+                        <TextView
+                            android:id="@+id/totlareview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/muli"
+                            android:text="Reviews"
+                            android:visibility="gone"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/stars"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:layout_marginRight="10dp"
+                                android:src="@drawable/premimulstar"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnGetQuote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:fontFamily="@font/muli_bold"
+                android:background="@drawable/strock_btn_green"
+                android:text="Enquiry Now"
+                android:textColor="#fff" />
+
+            <!--</android.support.v7.widget.CardView>-->
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/md_blue_grey_400"
+                    android:fontFamily="@font/muli"
+                    android:gravity="center_vertical"
+                    android:text="Loading"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/loc2"
+                    android:drawablePadding="10dp"
+                    android:backgroundTint="@color/orange"
+                    android:paddingRight="3dp"
+                    android:fontFamily="@font/muli"
+                    android:gravity="center_vertical"
+                    android:text="Loading Loading Loading Loading Loading Loading v Loading Loading "
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+                <ImageView
+                    android:id="@+id/imgFav"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:drawableLeft="@drawable/person"
+                    android:drawablePadding="2dp"
+                    android:drawableTint="@color/md_blue_grey_400"
+                    android:fontFamily="@font/muli"
+                    android:gravity="center_vertical"
+                    android:text="Loading"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/callto1"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_blue_grey_400"
+                android:fontFamily="@font/muli"
+                android:backgroundTint="@color/orange"
+                android:text="Loading"
+                android:textColor="@color/black"
+
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/landline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/telephone"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/md_blue_grey_400"
+                android:fontFamily="@font/muli"
+                android:backgroundTint="@color/orange"
+                android:text="0120-274087"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="5dp"
+                android:text="Open Now: "
+                android:textColor="@color/orange"
+                android:textSize="13dp"
+                android:visibility="gone" />
+
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@color/gray2"></View>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/local_phone_small"
+                    android:drawablePadding="0dp"
+                    android:drawableTint="@color/blue"
+                    android:fontFamily="@font/muli_semibold"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Call"
+                    android:textColor="#111"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:background="@drawable/strock_simple"
+                    />
+
+                <TextView
+                    android:id="@+id/meassage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/message"
+                    android:layout_marginLeft="3dp"
+                    android:drawablePadding="0dp"
+                    android:drawableTint="@color/blue"
+                    android:fontFamily="@font/muli_semibold"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Message"
+                    android:textColor="#111"
+                    android:background="@drawable/strock_simple"
+
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/review"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/review"
+                    android:drawablePadding="0dp"
+                    android:drawableTint="@color/blue"
+                    android:fontFamily="@font/muli_semibold"
+                    android:background="@drawable/strock_simple"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="Review"
+                    android:textColor="#111"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:background="@color/gray2">-->
+
+            <!--</View>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="0dp"-->
+            <!--card_view:cardCornerRadius="0dp"-->
+            <!--android:paddingBottom="15dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp">-->
+
+            <LinearLayout
+                android:id="@+id/servicesLay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="5dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:text="Our Services"
+                    android:textColor="@color/orange"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+
+                <!--<ListView-->
+                <!--android:id="@+id/listview"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="200dp"-->
+                <!--android:background="@color/white"></ListView>-->
+
+
+                <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_below="@+id/img"
+                    android:background="@color/white"
+                    android:stretchMode="columnWidth" />
+            </LinearLayout>
+            <!--</android.support.v7.widget.CardView>-->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fafafa"
+                android:orientation="vertical">
+
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/bannerpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/greentv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="2dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:text="Tradeshow"
+                    android:background="#43A047"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="140dp"
+                    android:background="@drawable/strock_card"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:id="@+id/eventname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_weight="2"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="International Trade Fair of Machines and Tools for Wood and Furniture Industries"
+                            android:textColor="@color/blue"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/heartiv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginTop="14dp"
+                            android:visibility="gone"
+                            android:src="@drawable/ic_menu_gallery" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/locationiv"
+                            android:layout_width="15dp"
+                            android:layout_height="16dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:src="@drawable/loc" />
+
+                        <TextView
+                            android:id="@+id/addresstv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/muli_bold"
+                            android:text="Shipra sun city, Indrapuram, Ghaziabad, Uttar Pradesh, India"
+                            android:textColor="#757575" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/caliv"
+                                android:layout_width="20dp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="center"
+                                android:layout_margin="10dp"
+                                android:src="@android:drawable/ic_menu_my_calendar" />
+
+                            <TextView
+                                android:id="@+id/datetv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/muli_bold"
+                                android:text="02 May - 05 May 2018"
+                                android:textColor="#757575" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="20dp"
+                                android:drawableLeft="@android:drawable/sym_action_call"
+                                android:drawablePadding="6dp"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:paddingBottom="6dp"
+                                android:background="@drawable/strock_call"
+                                android:paddingLeft="12dp"
+                                android:paddingRight="15dp"
+                                android:paddingTop="6dp"
+                                android:text="Call"
+                                android:textColor="@color/blue"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Event"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="@font/muli_bold"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="internationl trade fair of machines and woord for wood and furniture industries is a 4 day  event being held from this date to this date  at this goung in delhi in this address"
+                android:padding="5dp"
+                android:fontFamily="@font/muli_semibold"
+                android:layout_marginLeft="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organizer Details"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_bold"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/orgBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IEC - International Exhibition Center"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_bold"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:textColor="@color/blue"
+                android:layout_marginLeft="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/loc" />
+                <TextView
+                    android:id="@+id/orgAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:padding="5dp"
+                    android:layout_margin="10dp"
+                    android:drawablePadding="10dp"
+                    android:text="Shipradfdf"
+                    android:textColor="@color/orange" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CONTACT ORGANIZER"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:fontFamily="@font/muli_bold"
+                android:layout_margin="5dp"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

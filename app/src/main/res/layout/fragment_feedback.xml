@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#a5fd5501"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:src="@drawable/loc" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:fontFamily="@font/muli_bold"-->
+                <!--android:padding="5dp"-->
+                <!--android:text="Add Latest Offers"-->
+                <!--android:textColor="@color/blue"-->
+                <!--android:textSize="18sp" />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Select Sub Category :"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/edittextback2"
+                android:focusableInTouchMode="true">
+
+                <Spinner
+                    android:id="@+id/spinerCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:hint="Offer Heading"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="8dp">
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:hint="Name"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Mobile No:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/mobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:hint="Mobile No"
+                android:inputType="phone"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Email Id:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/emailID"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:hint="Email Id:"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="State:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!--<android.support.v7.widget.AppCompatSpinner-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginRight="12dp"-->
+            <!--android:layout_marginLeft="12dp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--&gt;-->
+            <!--</android.support.v7.widget.AppCompatSpinner>-->
+
+            <LinearLayout
+                android:id="@+id/offerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:orientation="vertical">
+
+
+                <Spinner
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:padding="5dp"
+                    android:inputType="numberDecimal"
+                    android:text="Select Discount :"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/discountType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@drawable/edittextback2"
+                    android:orientation="vertical">
+
+
+                    <Spinner
+                        android:id="@+id/discountSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        />
+                </LinearLayout>  </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:padding="5dp"
+                    android:text="Actual Price :"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="3dp"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/edittextback2"
+                    android:hint="Actual Price"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="8dp"
+                    android:textSize="14sp" />   </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="City:"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittextback2"
+                android:hint="City"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Designation/Department :"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/desigantion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:hint="Designation/Department"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Organization :"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/orgarnisa"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/edittextback2"
+                android:hint="Organisation"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Message :"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+
+            <EditText
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edittextback2"
+                android:hint="Message"
+                android:paddingBottom="8dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="8dp"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/bubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/strock_btn_org"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center"
+                android:text="submit"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

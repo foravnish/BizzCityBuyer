@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search"
+        android:iconTint="@color/black"
+        android:title="search"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/action_cal"
+        android:icon="@drawable/loc"
+        android:title="search"
+        android:visible="false"
+        app:showAsAction="ifRoom|collapseActionView" />
+</menu>

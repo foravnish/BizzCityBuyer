@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        app:cardElevation="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/linerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawline"
+                android:layout_margin="3dp"
+                android:paddingRight="55dp"
+                android:orientation="vertical">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/stroke4"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:text="sector  2"/>
+
+                    <TextView
+                        android:id="@+id/discount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/stroke5"
+                        android:textSize="13dp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#fff"
+                        android:text="aaaa"/>
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/qImage1"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:background="@drawable/ract2"-->
+                    <!--android:orientation="horizontal">-->
+                    <!--</LinearLayout>-->
+
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:fontFamily="@font/muli"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/grayText"
+                        android:textSize="14sp"
+                        android:background="@drawable/um_listing"/>
+
+                    <TextView
+                        android:id="@+id/catName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="p"
+                        android:visibility="visible"
+                        android:textColor="@color/green"
+                        android:fontFamily="@font/muli"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="3"
+                        android:textSize="15dp"
+                        android:text="Rapunzel Rapunzel let down your golden hair! Bedtime Stories and Songs for Kids youtube channel presents ... "
+                        android:textColor="@color/grayText"
+                        android:fontFamily="@font/muli"
+                        />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/points"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:background="@drawable/cirlce2"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="25"-->
+                    <!--android:textColor="#FFFF00"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="bold" />-->
+                </LinearLayout>
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.2dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="#c1c1c1"></View>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="3dp">
+                        <TextView
+                            android:id="@+id/desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="17dp"
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:visibility="gone"
+                            android:text="pankaj"/>
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/subCat"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="13dp"-->
+                        <!--android:layout_marginTop="7dp"-->
+                        <!--android:drawablePadding="10dp"-->
+                        <!--android:drawableLeft="@drawable/cate"-->
+                        <!--android:textColor="@color/gray"-->
+                        <!--android:text="sector  2 vasundhara"/>-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/address"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="7"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:textColor="@color/gray"-->
+                        <!--android:drawablePadding="10dp"-->
+                        <!--android:drawableLeft="@drawable/loca"-->
+                        <!--android:text="sector  2 vasundhara"/>-->
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:visibility="visible"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="2dp"
+                                android:fontFamily="@font/muli"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/grayText"
+                                android:textSize="14sp"
+                                android:background="@drawable/um_offer"/>
+                            <TextView
+                                android:id="@+id/sub_cat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AX-S Printing &amp; Advertizing"
+                                android:padding="2dp"
+                                android:fontFamily="@font/muli"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="#012b72"
+                                />
+                            <TextView
+                                android:id="@+id/date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="27 April 2018"
+                                android:fontFamily="@font/muli"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/grayText"
+                                android:visibility="gone"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:backgroundTint="@color/grayText"
+                                android:drawableLeft="@drawable/loc1"
+                                android:drawablePadding="10dp"
+                                android:drawableTint="@color/grayText"
+                                android:fontFamily="@font/muli"
+                                android:text="V"
+                                android:textColor="@color/black" />
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/muli"
+                                android:text="27 April 2018"
+                                android:textColor="@color/grayText"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/prem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/star"
+                android:visibility="visible"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

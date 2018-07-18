@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "buyer.bizzcity.bizzcitybuyer"
+        minSdkVersion 16
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode 8
+        versionName "1.7"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        // as noted by @Vishnuvathsan you may also need to include
+        // variations on the file name. It depends on your dependencies.
+        // Some other common variations on notice and license file names
+        exclude 'META-INF/notice'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license'
+        exclude 'META-INF/license.txt'
+        pickFirst 'protobuf.meta'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'junit:junit:4.12'
+    compile 'com.android.support.test:runner:1.0.1'
+    compile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'com.android.support:appcompat-v7:26.1.0' // appcompat library
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1@aar'
+    compile 'com.android.volley:volley:1.1.0'
+    compile 'me.zhanghai.android.materialratingbar:library:1.2.0'
+    compile 'com.romainpiel.shimmer:library:1.4.0@aar'
+    compile 'com.google.android.gms:play-services:11.4.0'
+    compile 'com.google.android.gms:play-services-location:10.0.1'
+    compile 'com.littlechoc.cornerlabel:cornerlabel:1.0.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.2'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.gelitenight.waveview:waveview:1.0.0'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    compile 'com.squareup.picasso:picasso:2.5.0'
+
+    apply plugin: 'com.google.gms.google-services'
+
+}
+//apply plugin: 'com.google.gms.google-services'
+

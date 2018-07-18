@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="127dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/save_time2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_bold"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="GET BEST QUOTE"
+                    android:textColor="@color/orange"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_semibold"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/uname"
+                            android:layout_marginLeft="5dp"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/nameQ"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee"
+                            android:fontFamily="@font/muli"
+                            android:hint="Your Name"
+                            android:paddingLeft="25dp"
+                            android:textColorHint="@color/black" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/mob"
+                            android:layout_marginLeft="5dp"/>
+                        <EditText
+                            android:id="@+id/mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee"
+                            android:hint="Mobile No."
+                            android:maxLength="10"
+                            android:inputType="phone"
+                            android:fontFamily="@font/muli"
+                            android:paddingLeft="25dp"
+                            android:textColorHint="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/req"
+                            android:layout_marginLeft="5dp"/>
+                        <EditText
+                            android:id="@+id/requirement"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="#eeeeee"
+                            android:hint="Requirement"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:fontFamily="@font/muli"
+                            android:paddingLeft="25dp"
+                            android:textColorHint="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="#eeeeee"
+                        android:layout_margin="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/poploc"
+                            android:layout_marginLeft="5dp"/>
+
+                        <Spinner
+                            android:id="@+id/spiner"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginLeft="20dp"></Spinner>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/linerOther"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/poploc"
+                            android:layout_marginLeft="5dp"/>
+
+                        <EditText
+                            android:id="@+id/otherLoc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee"
+                            android:hint="Other Area"
+                            android:fontFamily="@font/muli"
+                            android:paddingLeft="25dp"
+                            android:textColorHint="@color/black"/>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/getQuotre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GET QUOTE"
+                        android:background="@color/black"
+                        android:textColor="@color/white"
+                        android:ems="10"
+                        android:maxEms="10"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/muli_bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentBottom="true"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/check"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="Your requirement will be shared with relevant businesses"
+                        android:minLines="2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/check"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="You will receive multiple price quotation"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/check"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:text="Choose the best price and get your job done"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

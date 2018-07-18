@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:fontFamily="@font/muli"
+    android:text="dfdfd"
+    android:textColor="@color/grayText"
+    android:background="@drawable/spinner_item_border" />
+
+    <!--<TextView-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:padding="15dp"-->
+    <!--android:textSize="16dp"-->
+    <!--android:background="@drawable/strock_edit"-->
+    <!--android:background="@drawable/spinner_item_border"-->
+    <!--/>-->

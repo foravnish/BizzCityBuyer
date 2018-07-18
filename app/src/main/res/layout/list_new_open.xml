@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/download1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        card_view:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/eventpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+
+                    />
+                <ImageView
+                    android:id="@+id/calpic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/eventpic"
+                    android:src="@android:drawable/ic_menu_my_calendar"
+                    android:layout_marginLeft="5dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:visibility="gone"
+                    android:layout_margin="6dp"
+                    android:textColor="@color/grayText"
+                    android:layout_toRightOf="@+id/calpic"
+                    android:textStyle="bold"
+                    android:layout_alignBottom="@+id/eventpic"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/eventname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Loading..."
+                    android:textColor="#0073b6"
+                    android:layout_weight="1.3"
+                    android:fontFamily="@font/muli_bold"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="7dp"
+
+                    />
+                <TextView
+                    android:id="@+id/tag"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".7"
+                    android:text="Monument"
+                    android:layout_marginRight="7dp"
+                    android:singleLine="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/muli_semibold"
+                    android:background="@drawable/strock_btn_green1"
+                    android:paddingTop="1dp"
+                    android:paddingBottom="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/locpic"
+                    android:layout_width="15dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/loc"
+                    android:layout_below="@+id/eventname"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="7dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/evntLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/orange"
+                    android:drawableLeft="@drawable/loc1"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/grayText"
+                    android:fontFamily="@font/muli"
+                    android:textSize="13sp"
+                    android:text="Loading"
+                    android:textColor="@color/grayText" />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="@color/orange"
+                android:drawableLeft="@drawable/callto"
+                android:drawablePadding="10dp"
+                android:textSize="13sp"
+                android:drawableTint="@color/grayText"
+                android:fontFamily="@font/muli"
+                android:text="Loading"
+                android:textColor="@color/grayText"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_grey_200"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Closing Day -"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/muli_bold"
+                    android:textColor="@color/orange"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/closing_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday, Sunday"
+                    android:layout_marginLeft="7dp"
+                    android:fontFamily="@font/muli_semibold"
+                    android:textColor="#333333"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

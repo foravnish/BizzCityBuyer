@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@color/md_grey_200"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/areaShow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:fontFamily="@font/muli_semibold"
+                android:textSize="15sp"
+                android:checked="true"
+                android:buttonTint="@color/black"
+                android:textColor="#111111"
+
+                android:text="By Area"/>
+
+            <RadioButton
+                android:id="@+id/nearShow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:buttonTint="@color/black"
+                android:fontFamily="@font/muli_semibold"
+                android:textColor="#111111"
+                android:text="Near Me"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linera"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:stretchMode="columnWidth" />
+
+    <Button
+        android:id="@+id/bubmit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lvExp"
+        android:visibility="visible"
+        android:background="@drawable/strock_btn_submit"
+        android:backgroundTint="@color/orange"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingTop="-2dp"
+        android:paddingBottom="-2dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/muli_bold"
+        android:textColor="#fff"
+        android:text="Submit"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linera"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS is OFF"
+            android:fontFamily="@font/muli_bold"
+
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please click menu item to On GPS"
+            android:fontFamily="@font/muli_bold"
+            android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/bubmit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/strock_btn_submit"
+            android:backgroundTint="@color/orange"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"
+            android:text="Submit"/>
+
+    </LinearLayout>
+</RelativeLayout>

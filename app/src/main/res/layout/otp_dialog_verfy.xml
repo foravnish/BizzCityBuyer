@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="18dp"
+            android:textColor="#111"
+            android:layout_gravity="left"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/recieve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14dp"
+            android:textColor="#111"
+            android:layout_gravity="right"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Re Send OTP"
+            android:textSize="14dp"
+            android:textColor="#111"
+            android:layout_gravity="right"
+            android:gravity="left"/>
+
+        <EditText
+            android:id="@+id/otp_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:inputType="phone"/>
+
+        <Button
+            android:id="@+id/submit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:background="@drawable/stroke2"/>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

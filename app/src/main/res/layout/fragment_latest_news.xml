@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray3"
+    android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/relatuive"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/news_banner" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/muli_bold"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Ghaziabad News"
+                android:textColor="@color/yellow"
+                android:textSize="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="New Development &amp; Announcements"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/lvExp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="3dp"
+        android:layout_below="@+id/relatuive"
+        android:verticalSpacing="3dp"
+        android:layout_above="@+id/search_ad_view"
+        android:stretchMode="columnWidth"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/search_ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|bottom"
+        android:visibility="gone"
+        ads:adSize="BANNER"
+        android:layout_below="@+id/indicat2"
+        ads:adUnitId="ca-app-pub-3987173620445938/8060192420" />
+
+    <ImageView
+        android:id="@+id/imageNoListing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#fff"
+        android:src="@drawable/noliting"/>
+
+
+</RelativeLayout>

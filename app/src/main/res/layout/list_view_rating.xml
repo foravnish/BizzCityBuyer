@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/text12"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:fontFamily="@font/muli_semibold"-->
+            <!--android:text="Total reviews"-->
+            <!--android:textColor="@color/blue" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/no_of_review"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="3dp"-->
+            <!--android:layout_toRightOf="@+id/text12"-->
+            <!--android:fontFamily="@font/muli_semibold"-->
+            <!--android:text="(10)"-->
+            <!--android:textColor="@color/red" />-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/user_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/circle_back"
+
+                android:backgroundTint="#42a5f5"
+                android:gravity="center"
+                android:text="P"
+                android:maxLength="1"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/user_icon"
+                android:text="Pankaj Kumar"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/c1_mobile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="+91 XXXXXXXX27"
+                android:textColor="@color/md_grey_700"
+                android:textSize="11sp" />
+
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/rtbar2"
+                style="@style/Widget.MaterialRatingBar.RatingBar"
+                android:layout_width="100dp"
+                android:layout_height="17dp"
+                android:layout_below="@+id/comName"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/user_icon"
+                android:rating="4"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:progressTint="@color/orange"
+                android:stepSize="1" />
+            <TextView
+                android:id="@+id/review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rtbar2"
+                android:layout_toRightOf="@+id/user_icon"
+                android:textColor="@color/md_grey_700"
+                android:text="International trade Fair of machines and tools of woods for industries and many more useful tools, held on 13th sept."
+                android:textSize="11sp"
+                android:layout_marginLeft="10dp"
+                />
+            <ImageView
+                android:id="@+id/cal_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:layout_below="@+id/review"
+                android:layout_toRightOf="@+id/user_icon"
+                android:tint="@color/md_grey_700"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/date_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cal_icon"
+                android:layout_below="@+id/review"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/md_grey_800"
+                android:textSize="12sp"
+                android:text="05 May 2018"/>
+            <ImageView
+                android:id="@+id/dotted_line"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_below="@+id/cal_icon"
+                android:src="@drawable/strock_dot"
+                android:layerType="software"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
