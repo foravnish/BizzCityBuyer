@@ -4,7 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:showIn="navigation_view">
 
-    <!--android:iconTint="@color/gray4"-->
     <group android:checkableBehavior="single"
         android:id="@+id/group1"
         >
@@ -47,6 +46,7 @@
         <item
             android:id="@+id/nav_event"
             android:icon="@drawable/event"
+            android:visible="false"
             android:title="Upcoming Events" />
     </group>
     <group android:checkableBehavior="single"
@@ -71,6 +71,7 @@
         <item
             android:id="@+id/nav_offers"
             android:icon="@drawable/offer"
+            android:visible="false"
             android:title="Latest Offers" />
     </group>
 

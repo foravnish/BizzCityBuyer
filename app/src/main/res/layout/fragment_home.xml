@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f0f6fb"
+
     android:orientation="vertical"
     tools:context="buyer.bizzcity.bizzcityinfobuyer.Fragments.Home">
 
@@ -18,10 +18,95 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <android.support.v7.widget.CardView
+                android:id="@+id/eventcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:padding="3dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:visibility="visible"
+                ads:cardCornerRadius="15dp"
+                android:background="@drawable/strock_simple_news"
+                ads:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/strock_simple_news"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/orText4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_marginLeft="10dp"
+
+                            android:fontFamily="@font/muli_semibold"
+                            android:text="Latest News Headlines"
+                            android:textColor="#444"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/seeAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+
+                            android:fontFamily="@font/muli"
+                            android:text="View All"
+                            android:textColor="#333" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rela"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="5">
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp" />
+
+                        <com.viewpagerindicator.CirclePageIndicator
+                            android:id="@+id/indicat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/slider"
+                            android:layout_marginTop="145dp" />
+
+                    </RelativeLayout>
+
+                    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                    <!--android:id="@+id/lvExp2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@color/white"/>-->
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
             <RelativeLayout
                 android:id="@+id/rela1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
+                android:visibility="gone"
                 android:layout_weight="5">
 
                 <android.support.v4.view.ViewPager
@@ -140,7 +225,6 @@
                             android:text="Daily Needs"
                             android:textColor="@color/md_black_1000"
                             android:textSize="16sp" />
-
 
                     </RelativeLayout>
 
@@ -6342,6 +6426,7 @@
                 android:layout_marginBottom="6dp"
                 android:layout_marginTop="6dp"
                 android:padding="3dp"
+                android:visibility="gone"
                 ads:cardCornerRadius="0dp"
                 ads:cardElevation="2dp">
 
@@ -6350,6 +6435,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="125dp"
                     android:scaleType="fitXY"
+                    android:visibility="gone"
                     android:src="@drawable/offer_ads" />
 
                 <LinearLayout
@@ -6411,91 +6497,6 @@
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/eventcard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="6dp"
-                android:layout_marginTop="6dp"
-                android:padding="3dp"
-                android:visibility="gone"
-                ads:cardCornerRadius="0dp"
-                ads:cardElevation="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp">
-
-
-                        <com.romainpiel.shimmer.ShimmerTextView
-                            android:id="@+id/orText4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/muli_semibold"
-                            android:shadowColor="#7F000000"
-                            android:shadowDx="1"
-                            android:shadowDy="1"
-                            android:shadowRadius="2"
-                            android:text="Latest News Headlines"
-                            android:textColor="@color/md_black_1000"
-                            android:textSize="16sp" />
-
-
-                        <TextView
-                            android:id="@+id/seeAll"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentRight="true"
-                            android:layout_marginRight="5dp"
-                            android:layout_marginTop="8dp"
-                            android:fontFamily="@font/muli"
-                            android:text="View All"
-                            android:textColor="@color/red" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/rela"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="13dp"
-                        android:layout_weight="5">
-
-                        <android.support.v4.view.ViewPager
-                            android:id="@+id/slider"
-                            android:layout_width="match_parent"
-                            android:layout_height="210dp" />
-
-                        <com.viewpagerindicator.CirclePageIndicator
-                            android:id="@+id/indicat"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignTop="@+id/slider"
-                            android:layout_marginTop="130dp" />
-
-                    </RelativeLayout>
-
-                    <!--<GridView xmlns:android="http://schemas.android.com/apk/res/android"-->
-                        <!--android:id="@+id/lvExp2"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="wrap_content"-->
-                        <!--android:background="@color/white"/>-->
-
-                </LinearLayout>
-
-
-            </android.support.v7.widget.CardView>
 
 
             <com.google.android.gms.ads.AdView

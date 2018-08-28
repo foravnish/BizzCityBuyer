@@ -268,20 +268,6 @@ public class LatestNews extends Fragment {
         public View getView(final int position, View convertView, ViewGroup parent) {
 
 
-//            map.put("id", jsonObject.optString("id"));
-//            map.put("cat_id", jsonObject.optString("cat_id"));
-//            map.put("heading", jsonObject.optString("heading"));
-//            map.put("description", jsonObject.optString("description"));
-//            map.put("offer_type", jsonObject.optString("offer_type"));
-//            map.put("discount", jsonObject.optString("discount"));
-//            map.put("actual_price", jsonObject.optString("actual_price"));
-//            map.put("offer_price", jsonObject.optString("offer_price"));
-//            map.put("coupon_code", jsonObject.optString("coupon_code"));
-//            map.put("offer_from", jsonObject.optString("offer_from"));
-//            map.put("offer_to", jsonObject.optString("offer_to"));
-//            map.put("image", jsonObject.optString("image"));
-//            map.put("posted_date", jsonObject.optString("posted_date"));
-
             convertView=inflater.inflate(R.layout.list_my_news,parent,false);
 
             name=convertView.findViewById(R.id.name);
@@ -291,15 +277,15 @@ public class LatestNews extends Fragment {
 
             name.setText(Html.fromHtml(AllProducts.get(position).get("heading")));
             offersText.setText(AllProducts.get(position).get("created"));
-            tag.setText(AllProducts.get(position).get("tag"));
+            tag.setText(AllProducts.get(position).get("tag")+"");
 
             ImageLoader imageLoader = AppController.getInstance().getImageLoader();
             imgaeView.setImageUrl(AllProducts.get(position).get("image_thumb").replace(" ","%20"),imageLoader);
 
-            final Typeface tvFont = Typeface.createFromAsset(getActivity().getAssets(), "muli_bold.ttf");
-            name.setTypeface(tvFont);
-            tag.setTypeface(tvFont);
-            offersText.setTypeface(tvFont);
+//            final Typeface tvFont = Typeface.createFromAsset(getActivity().getAssets(), "muli_bold.ttf");
+//            name.setTypeface(tvFont);
+//            tag.setTypeface(tvFont);
+//            offersText.setTypeface(tvFont);
 
 
 

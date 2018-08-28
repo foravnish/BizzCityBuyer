@@ -138,12 +138,13 @@ public class Home extends Fragment implements View.OnClickListener {
     final long PERIOD_MS = 5000; // time in milliseconds between successive task executions.
     JSONObject jsonObject;
     JSONObject jsonObject2;
-    ShimmerTextView orText,orText2,orText5,orText4,orText24,orText22,orText21,orText52,orText241,orText2413,orText2416,head_doctor_new,head_finance,head_real_estate,head_furniture,orText24167,head_daily_needs,orTextEdu,head_hotel;
+    ShimmerTextView orText,orText2,orText5,orText24,orText22,orText21,orText52,orText241,orText2413,orText2416,head_doctor_new,head_finance,head_real_estate,head_furniture,orText24167,head_daily_needs,orTextEdu,head_hotel;
     ShimmerTextView head_astro;
     Shimmer shimmer;
     List<String > subCat=new ArrayList<>();
     CardView cardView1,eventcard;
     GridView lvExp2;
+    TextView orText4;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -151,7 +152,7 @@ public class Home extends Fragment implements View.OnClickListener {
         View  view=inflater.inflate(R.layout.fragment_home, container, false);
 
         viewPager = (ViewPager) view.findViewById(R.id.slider);
-        viewPager2 = (ViewPager) view.findViewById(R.id.slider2);
+       // viewPager2 = (ViewPager) view.findViewById(R.id.slider2);
 //        lvExp2 = (GridView) view.findViewById(R.id.lvExp2);
 
         indicator = (CirclePageIndicator)view.findViewById(R.id.indicat);
@@ -179,7 +180,7 @@ public class Home extends Fragment implements View.OnClickListener {
 
         orText21=view.findViewById(R.id.orText21);
         cardView1=view.findViewById(R.id.cardView1);
-        eventcard=view.findViewById(R.id.eventcard);
+        //eventcard=view.findViewById(R.id.eventcard);
 
         edu1=view.findViewById(R.id.edu1);
         edu2=view.findViewById(R.id.edu2);
@@ -237,7 +238,7 @@ public class Home extends Fragment implements View.OnClickListener {
         shimmer.start(orText);
         shimmer.start(orText2);
         shimmer.start(orText5);
-        shimmer.start(orText4);
+      //  shimmer.start(orText4);
         shimmer.start(orText24);
         shimmer.start(orText22);
 //        shimmer.start(orText23);
@@ -791,117 +792,117 @@ public class Home extends Fragment implements View.OnClickListener {
         ////  Begin Baner Api
 
 
-        JsonObjectRequest jsonObjReq2 = new JsonObjectRequest(Request.Method.GET,
-                Api.homeBannerImage+"?cityId="+ MyPrefrences.getCityID(getActivity()), null, new Response.Listener<JSONObject>() {
-
-            @Override
-            public void onResponse(JSONObject response) {
-                Log.d("ResposeBaner", response.toString());
-                Util.cancelPgDialog(dialog);
-                try {
-                    // Parsing json object response
-                    // response will be a json object
-//                    String name = response.getString("name");
-                    HashMap<String,String> hashMap = null;
-                    if (response.getString("status").equalsIgnoreCase("success")){
-                        AllBaner.clear();
-                        JSONArray jsonArray=response.getJSONArray("message");
-                        for (int i=0;i<jsonArray.length();i++) {
-                            JSONObject jsonObject = jsonArray.getJSONObject(i);
-
-//                            hashMap = new HashMap<>();
-//                            hashMap.put("id",jsonObject.optString("id"));
-//                            hashMap.put("cat_id",jsonObject.optString("cat_id"));
-//                            hashMap.put("eventName",jsonObject.optString("eventName"));
-//                            hashMap.put("photo",jsonObject.optString("photo"));
+//        JsonObjectRequest jsonObjReq2 = new JsonObjectRequest(Request.Method.GET,
+//                Api.homeBannerImage+"?cityId="+ MyPrefrences.getCityID(getActivity()), null, new Response.Listener<JSONObject>() {
 //
+//            @Override
+//            public void onResponse(JSONObject response) {
+//                Log.d("ResposeBaner", response.toString());
+//                Util.cancelPgDialog(dialog);
+//                try {
+//                    // Parsing json object response
+//                    // response will be a json object
+////                    String name = response.getString("name");
+//                    HashMap<String,String> hashMap = null;
+//                    if (response.getString("status").equalsIgnoreCase("success")){
+//                        AllBaner.clear();
+//                        JSONArray jsonArray=response.getJSONArray("message");
+//                        for (int i=0;i<jsonArray.length();i++) {
+//                            JSONObject jsonObject = jsonArray.getJSONObject(i);
+//
+////                            hashMap = new HashMap<>();
+////                            hashMap.put("id",jsonObject.optString("id"));
+////                            hashMap.put("cat_id",jsonObject.optString("cat_id"));
+////                            hashMap.put("eventName",jsonObject.optString("eventName"));
+////                            hashMap.put("photo",jsonObject.optString("photo"));
+////
+////                            viewPager2.setAdapter(mCustomPagerAdapter2);
+////                            indicator.setViewPager(viewPager2);
+////                            mCustomPagerAdapter2.notifyDataSetChanged();
+//
+//
+//                            if (jsonObject.optString("cat_id").equalsIgnoreCase("Home")) {
+//                                AllBaner.add(new Const(jsonObject.optString("id"), jsonObject.optString("cat_id"), jsonObject.optString("subcategory"), jsonObject.optString("image"), jsonObject.optString("meta_keywords"), jsonObject.optString("meta_description"), jsonObject.optString("meta_title"),null,null,null));
+//                            }
+//
+//                            mCustomPagerAdapter2=new CustomPagerAdapter2(getActivity());
 //                            viewPager2.setAdapter(mCustomPagerAdapter2);
-//                            indicator.setViewPager(viewPager2);
+//                            indicator2.setViewPager(viewPager2);
 //                            mCustomPagerAdapter2.notifyDataSetChanged();
-
-
-                            if (jsonObject.optString("cat_id").equalsIgnoreCase("Home")) {
-                                AllBaner.add(new Const(jsonObject.optString("id"), jsonObject.optString("cat_id"), jsonObject.optString("subcategory"), jsonObject.optString("image"), jsonObject.optString("meta_keywords"), jsonObject.optString("meta_description"), jsonObject.optString("meta_title"),null,null,null));
-                            }
-
-                            mCustomPagerAdapter2=new CustomPagerAdapter2(getActivity());
-                            viewPager2.setAdapter(mCustomPagerAdapter2);
-                            indicator2.setViewPager(viewPager2);
-                            mCustomPagerAdapter2.notifyDataSetChanged();
-                            //viewPager2.setPageTransformer(true, new RotateUpTransformer());
-                            //mCustomPagerAdapter2.addData(AllBaner);
-
-
-//                            final Handler handler = new Handler();
-//                            final Runnable Update = new Runnable() {
-//                                public void run() {
-//                                    if (currentPage == AllBaner.size()) {
-//                                        currentPage = 0;
-//                                    }
-//                                    viewPager2.setCurrentItem(currentPage++);
-//                                }
-//                            };
+//                            //viewPager2.setPageTransformer(true, new RotateUpTransformer());
+//                            //mCustomPagerAdapter2.addData(AllBaner);
 //
-//                            timer = new Timer(); // This will create a new Thread
-//                            timer .schedule(new TimerTask() { // task to be scheduled
 //
-//                                @Override
-//                                public void run() {
-//                                    handler.post(Update);
+////                            final Handler handler = new Handler();
+////                            final Runnable Update = new Runnable() {
+////                                public void run() {
+////                                    if (currentPage == AllBaner.size()) {
+////                                        currentPage = 0;
+////                                    }
+////                                    viewPager2.setCurrentItem(currentPage++);
+////                                }
+////                            };
+////
+////                            timer = new Timer(); // This will create a new Thread
+////                            timer .schedule(new TimerTask() { // task to be scheduled
+////
+////                                @Override
+////                                public void run() {
+////                                    handler.post(Update);
+////                                }
+////                            }, DELAY_MS, PERIOD_MS);
+//
+//
+//
+//
+//
+//                        }
+//                        final Handler handler = new Handler();
+//
+//                        final Runnable update = new Runnable() {
+//
+//                            public void run() {
+//                                if (currentPage == AllBaner.size()) {
+//                                    currentPage = 0;
 //                                }
-//                            }, DELAY_MS, PERIOD_MS);
-
-
-
-
-
-                        }
-                        final Handler handler = new Handler();
-
-                        final Runnable update = new Runnable() {
-
-                            public void run() {
-                                if (currentPage == AllBaner.size()) {
-                                    currentPage = 0;
-                                }
-                                viewPager2.setCurrentItem(currentPage++);
-                            }
-                        };
-                        new Timer().schedule(new TimerTask() {
-                            @Override
-                            public void run() {
-                                handler.post(update);
-                            }
-                        }, 100, 5000);
-
-
-                    }
-
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                    Toast.makeText(getActivity(),
-                            "Error: " + e.getMessage(),
-                            Toast.LENGTH_LONG).show();
-                    Util.cancelPgDialog(dialog);
-                }
-
-            }
-        }, new Response.ErrorListener() {
-
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                VolleyLog.d("Respose", "Error: " + error.getMessage());
-                Toast.makeText(getActivity(),
-                        "Error! Please Connect to the internet", Toast.LENGTH_SHORT).show();
-                // hide the progress dialog
-                Util.cancelPgDialog(dialog);
-
-            }
-        });
-
-        // Adding request to request queue
-        jsonObjReq2.setShouldCache(false);
-        AppController.getInstance().addToRequestQueue(jsonObjReq2);
+//                                viewPager2.setCurrentItem(currentPage++);
+//                            }
+//                        };
+//                        new Timer().schedule(new TimerTask() {
+//                            @Override
+//                            public void run() {
+//                                handler.post(update);
+//                            }
+//                        }, 100, 5000);
+//
+//
+//                    }
+//
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                    Toast.makeText(getActivity(),
+//                            "Error: " + e.getMessage(),
+//                            Toast.LENGTH_LONG).show();
+//                    Util.cancelPgDialog(dialog);
+//                }
+//
+//            }
+//        }, new Response.ErrorListener() {
+//
+//            @Override
+//            public void onErrorResponse(VolleyError error) {
+//                VolleyLog.d("Respose", "Error: " + error.getMessage());
+//                Toast.makeText(getActivity(),
+//                        "Error! Please Connect to the internet", Toast.LENGTH_SHORT).show();
+//                // hide the progress dialog
+//                Util.cancelPgDialog(dialog);
+//
+//            }
+//        });
+//
+//        // Adding request to request queue
+//        jsonObjReq2.setShouldCache(false);
+//        AppController.getInstance().addToRequestQueue(jsonObjReq2);
         ///// End baner APi
 
 
@@ -918,7 +919,7 @@ public class Home extends Fragment implements View.OnClickListener {
 //                    String name = response.getString("name");
                     HashMap<String,String> hashMap = null;
                     if (response.getString("status").equalsIgnoreCase("success")){
-                        eventcard.setVisibility(View.VISIBLE);
+                        //eventcard.setVisibility(View.VISIBLE);
                         AllEvents.clear();
                         JSONArray jsonArray=response.getJSONArray("message");
                         int len=5;
@@ -948,7 +949,7 @@ public class Home extends Fragment implements View.OnClickListener {
                         }
                     }
                     else{
-                        eventcard.setVisibility(View.GONE);
+                       // eventcard.setVisibility(View.GONE);
                     }
 
                 } catch (JSONException e) {
