@@ -322,23 +322,24 @@ public class HomeAct extends AppCompatActivity
         });
         asyncTask.execute("28.669156", "77.453758"); //  asyncTask.execute("Latitude", "Longitude")
         /// end wether report
-// if (MyPrefrences.getUserLogin(getApplicationContext())==true){
-//            name.setText(MyPrefrences.getUSENAME(getApplicationContext()).substring(0,1).toUpperCase()+MyPrefrences.getUSENAME(getApplicationContext()).substring(1).toLowerCase());
-//            emailID.setText("+91 "+MyPrefrences.getMobile(getApplicationContext()));
-//
-//            Menu menu = navigationView.getMenu();
-//            MenuItem nav_login = menu.findItem(R.id.nav_login);
-//            nav_login.setTitle("Logout");
-//        }
-//
-//        else if (MyPrefrences.getUserLogin(getApplicationContext())==false){
-//            name.setText("Guest");
-//            emailID.setText("+91 "+"XXXXXXXXXX");
-//
-//            Menu menu = navigationView.getMenu();
-//            MenuItem nav_login = menu.findItem(R.id.nav_login);
-//            nav_login.setTitle("Login");
-//        }
+
+         if (MyPrefrences.getUserLogin(getApplicationContext())==true){
+                    name.setText(MyPrefrences.getUSENAME(getApplicationContext()).substring(0,1).toUpperCase()+MyPrefrences.getUSENAME(getApplicationContext()).substring(1).toLowerCase());
+                    emailID.setText("+91 "+MyPrefrences.getMobile(getApplicationContext()));
+
+                    Menu menu = navigationView.getMenu();
+                    MenuItem nav_login = menu.findItem(R.id.nav_login);
+                    nav_login.setTitle("Logout");
+                }
+
+                else if (MyPrefrences.getUserLogin(getApplicationContext())==false){
+                    name.setText("Guest");
+                    emailID.setText("+91 "+"XXXXXXXXXX");
+
+                    Menu menu = navigationView.getMenu();
+                    MenuItem nav_login = menu.findItem(R.id.nav_login);
+                    nav_login.setTitle("Login");
+                }
 //        Menu menu1 = navigationView.getMenu();
 //        MenuItem mydesh = menu1.findItem(R.id.nav_adver);
 //
